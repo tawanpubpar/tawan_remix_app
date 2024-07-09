@@ -1,8 +1,11 @@
-import type { MetaFunction } from "@remix-run/node";
+import ToDoList from "./toDoLists"
 
+
+import type { MetaFunction } from "@remix-run/node";
+import MyContact from "./myContact";
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "tawan Remix App" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
@@ -40,9 +43,12 @@ export default function Index() {
             rel="noreferrer"
           >
             Remix Docs
-          </a>
+           </a>
         </li>
       </ul>
+      <MyContact />
+      <ToDoList  />
+
     </div>
   );
 }
