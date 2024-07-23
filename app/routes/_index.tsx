@@ -1,5 +1,4 @@
-import ToDoList from "./toDoLists"
-
+import ToDoLists from "./toDolists";
 
 import type { MetaFunction } from "@remix-run/node";
 import MyContact from "./myContact";
@@ -47,7 +46,7 @@ export default function Index() {
         </li>
       </ul>
       <MyContact />
-      <ToDoList  />
+      <ToDoLists  />
 
     </div>
   );
